@@ -1,0 +1,54 @@
+@import "../functions.scss";
+#about__section{
+    background-color: #f8f8f8;
+    padding-top:8rem;
+    .title{
+        text-align: center;
+        font-size: calrem(40px);
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        margin-bottom:3rem;
+    }
+    .subtitle{
+        text-align: center;
+        font-size:calrem(16px);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: calrem(24px);
+        @include mobile{
+            padding-left:3rem;
+            padding-right:3rem;
+        }  
+    }
+    .subtitle:last-child{
+        margin-bottom:10.5rem;
+    }
+    .captionColumn{
+        padding-right:8rem;
+        margin-right:4rem;
+        padding-bottom:8.5rem;
+        @include mobile{
+            text-align: center;
+            padding-left:2rem;
+            padding-right:2rem;
+            width: 100%;
+        }
+    }
+    .caption{
+        color: $my-green;
+        margin-bottom:1rem;
+        font-size: calrem(12px);
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .smallTitle{
+        margin-bottom:1rem;
+        font-size: calrem(24px);
+        color:black
+    }
+    p{
+        font-family: 'Work Sans', sans-serif;
+        font-size: calrem(14px);
+    }
+}

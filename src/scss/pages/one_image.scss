@@ -1,0 +1,13 @@
+#one__image__section{
+    height: 20rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    img{
+        height: 20rem;
+        object-fit: cover;
+        width: 100%;
+        object-position: left center;
+    }
+}

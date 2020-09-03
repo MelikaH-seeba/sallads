@@ -1,0 +1,122 @@
+
+#featured_events_section{
+    background-color: #f8f8f8;
+    padding:5rem;
+    hr{
+        color:red;
+    }
+    .facebookEvent{
+        background-color: #94d3e2;
+        .title{
+            font-size:calrem(24px);
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            margin-bottom:0.5rem;
+        }
+        .subtitle{
+            color:#098677;
+            font-size:calrem(16px);
+            font-family: 'Work Sans', sans-serif;
+
+        }
+        .caption{
+            margin-top:0.5rem;
+            margin-bottom:0.5rem;
+            font-size:calrem(12px);
+            font-family: 'Work Sans', sans-serif;
+
+        }
+        .eventDescription{
+            color:white;
+            font-family: 'Work Sans', sans-serif;
+            font-size:calrem(16px);
+        }
+        .content{
+            .buttonColumn{
+                display: inline-flex;
+                figure{
+                    margin: 0;
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+            .button{
+                background-color: white;
+                border:0;
+                border-radius: 4px;
+                font-family: 'Work Sans', sans-serif;
+                margin-right:1rem;
+                color:#141f3d;
+            }
+            figure{
+                img{
+                    margin-right:0.5rem;
+                }
+                p{
+                    color: #141f3d;
+                    font-size: calrem(14px);
+                    font-family: 'Work Sans', sans-serif;
+
+                }
+            }
+        }
+    }
+
+    .otherEvent{
+        background-color: white;
+        .title{
+            font-size:calrem(24px);
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            margin-bottom:0.5rem;
+        }
+        .subtitle{
+            color:#098677;
+            font-size:calrem(16px);
+            font-family: 'Work Sans', sans-serif;
+
+        }
+        .caption{
+            margin-top:0.5rem;
+            margin-bottom:0.5rem;
+            font-size:12px;
+            font-family: 'Work Sans', sans-serif;
+
+        }
+        .eventDescription{
+            color:#858585;
+            font-family: 'Work Sans', sans-serif;
+            font-size:calrem(16px);
+        }
+        .content{
+            .buttonColumn{
+                display: inline-flex;
+                figure{
+                    margin: 0;
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+            .button{
+                background-color: #94d3e2;
+                border:0;
+                border-radius: 4px;
+                font-family: 'Work Sans', sans-serif;
+                margin-right:1rem;
+                color:#141f3d;
+            }
+            figure{
+                img{
+                    margin-right:0.5rem;
+                }
+                p{
+                    color: #141f3d;
+                    font-size: calrem(14px);
+                    font-family: 'Work Sans', sans-serif;
+
+                }
+            }
+        }
+    }  
+}
+

@@ -1,0 +1,23 @@
+@import "header.scss";
+@import "welcome_section.scss";
+@import "contact.scss";
+@import "about.scss";
+@import "images.scss";
+@import "menu.scss";
+@import "findie_footer.scss";
+@import "footer.scss";
+@import "order_section.scss";
+@import "instagram.scss";
+@import "social_media.scss";
+@import "one_image.scss";
+@import "booking.scss";
+@import "events.scss";
+@import "featured_events.scss";
+@import "featured_title.scss";
+@import "mobile_header.scss";
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}

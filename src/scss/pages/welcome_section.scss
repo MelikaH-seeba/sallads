@@ -1,0 +1,70 @@
+@import "../functions.scss";
+.hero{
+    //background-image: url(../images/bcg.png);
+    position: relative;
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    &:before{
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.23));
+    }
+    .container{
+        text-align: center;
+    }
+    .title{
+        margin-bottom:1rem !important;
+        padding-left:20%;
+        padding-right:20%;
+        font-weight: 300;
+        font-size: calrem(56px);
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        padding:0;
+    }
+    .subtitle{
+        margin-top:2rem !important;
+        font-size: calrem(18px);
+        text-align: center;
+        padding-left:30%;
+        padding-right:30%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        @include mobile{
+            padding-left:5%;
+            padding-right:5%;
+        }
+    }
+    .exploreButton{
+        outline:none;
+        border:none;
+        text-align: center;
+        margin-top:5rem;
+        background-color: $exploreButtonColor;
+        color:white;
+        font-size: calrem(16px);
+        padding:1.5rem;
+        font-family: 'Work Sans', sans-serif;
+    }
+    .scrollDiv{
+        position: absolute;
+        bottom:3rem;
+        left:43%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        @include mobile{
+            left:5%;
+        }
+        figure{
+            margin-right:1rem;
+        }
+    }
+}

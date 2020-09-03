@@ -1,0 +1,14 @@
+#findie__footer{
+    background-color: white;
+    padding:1.5rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size:calrem(12px);
+    figure{
+        text-align: right;
+    }
+    @include mobile{
+        figure{
+            text-align: left;
+        }
+    }
+}

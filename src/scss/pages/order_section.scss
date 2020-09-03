@@ -1,0 +1,85 @@
+@import "../functions.scss";
+#order__section{
+    background-color: white;
+    padding-top:8rem;
+    padding-bottom:0;
+}
+.orderColumn{
+    background-color: $my-green;
+    padding:2rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 2px solid #141f3d;
+    h1{
+        color:white;
+        font-family:'Work Sans', sans-serif;
+        font-size:calrem(24px);
+    }
+    h2{
+        color:white;
+        font-family:'Work Sans', sans-serif;
+        font-size:calrem(16px);
+    }
+    .cherryColumn{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        figure{
+            border-radius: 40rem;
+            padding: 0.3rem;
+            background-color: white;
+            width: 3.5rem;
+            height: 3.5rem;
+            display: inline-flex;
+            align-items: center;
+            @include mobile{
+                width: 3.5rem;
+                height: 3.5rem;
+                margin-left:0;
+            }
+            img{
+                margin: auto;
+            }
+        }
+    }
+    .buttonColumn{
+        display: inline-flex;
+        align-items: center;
+        .button{
+            outline:none;
+            border:0;
+            border-radius: 6px;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+            display: inline-flex;
+            align-items:center;
+            font-family: 'Work Sans', sans-serif;
+            figure{
+                margin-left:2rem;
+                display: inline-flex;
+                align-items:center;
+            }
+        }
+    }
+
+}
+#orderDiv{
+    transform: translateX(100%);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) all 1s;
+    z-index: 9999;
+}
+.activeDiv{
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+#orderDiv iframe{
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}

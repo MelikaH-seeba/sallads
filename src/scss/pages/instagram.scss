@@ -1,0 +1,30 @@
+@import "../functions.scss";
+#instagram__section{
+    padding:0;
+    margin:0;
+    background-color: white;
+    overflow: scroll;
+    .column{
+        padding:0;
+        margin:0;
+    }
+    .biggerImage{
+        margin-right:2rem;
+        width: 15%;
+        @include mobile{
+            width: 70%;
+        }
+        img{
+            object-fit: cover;
+        }
+        &:nth-child(even) {
+            width: 13%;
+            margin-top:2%;
+            @include mobile{
+                width: 60%;
+                margin-top:5%;
+
+            }
+        }
+    }
+}

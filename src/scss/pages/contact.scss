@@ -1,0 +1,63 @@
+@import "../functions.scss";
+#contact__section{
+    background-color: #ffffff;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    color:#4f5a68;
+    font-family: 'Work Sans', sans-serif;
+    h1{
+        color:black;
+        font-size: calrem(18px);
+        margin-bottom:1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    h2{
+        color:black;
+        font-size:calrem(16px);
+        margin-bottom:1rem;
+    }
+    .hours, .location, .contact{
+        .columns{
+            .column{
+                @include mobile{
+                    text-align: center !important;
+                }
+            } 
+        }
+    }
+    .location{
+        padding-left:2rem;
+        a{
+            color:#4f5a68;
+        }
+        @include mobile{
+            padding:0;
+        }
+    }
+    .emailPhone{
+        a{
+            color:#4f5a68;
+        }
+        .email{
+            text-decoration: underline;
+            color:$my-green;
+        }
+    }
+    .dropdown-menu{
+        width:13rem;
+    }
+    .button{
+        border:1px solid grey;
+        &:focus{
+            outline:none;
+            border:1px solid grey;
+            box-shadow:0 0 0 0;
+        }
+    }
+    .dropdown-items{
+        margin:0;
+        .column{
+            padding:0;
+        }
+    }
+}

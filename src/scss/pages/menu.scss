@@ -1,0 +1,128 @@
+@import "../functions.scss";
+#menu__section{
+    background-color: #f8f8f8;
+    text-align: center;
+    padding-bottom:5rem;
+    
+    figure{
+        margin-bottom:calrem(56px);
+        img{
+            width: 10%;
+        }
+    }
+    @include mobile{
+        .subcategory, .menuHeader{
+            width:100%;
+        }
+    }
+    
+    .ovalDivs{
+        display: inline-flex;
+        align-items: center;
+    }
+    .ovalDiv{
+        width: 6px;
+        height: 6px;
+        padding:0;
+        border-radius: 40rem;
+        margin-right:4px;
+        background-color: #e1e2e7;
+    }
+    h1{
+        font-size: calrem(40px);
+        font-weight: 300;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom:calrem(113px);
+    }
+    p{
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    .subtitle{
+        font-size: calrem(16px);
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+   hr{
+       width: 150vw;
+       margin-left: -50rem;
+       @include mobile{
+        margin-left: -4rem;
+       }
+   }
+    h3{
+        color: $my-green;
+        font-size: calrem(24px);
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom:2rem;
+    }
+    .dish{
+        display: inline-flex;
+        justify-content: center;
+        .dish_name{
+            text-transform: uppercase;
+            color:#141f3d;
+        }
+        p{
+            color:#141f3d;
+        }
+    }
+    .description{
+        padding-top:0;
+        padding-bottom:2rem;
+        p{
+            color:#4f5a68;
+        }
+    }
+    .pdfButton{
+        font-size: calrem(18px);
+        color: #141f3d;
+        background-color: transparent;
+        border:0px;
+        font-family: 'Work Sans', sans-serif;
+        margin-top:-3px;
+        figure{
+            img{
+                width:100%;
+                margin-left:0.5rem;
+                margin-top:0.1rem;
+            }
+        }
+        &:focus{
+            outline:none !important;
+            box-shadow:0 0 0 0;
+        }
+    }
+    .react-tabs__tab-list{
+        border:0;
+    }
+    .react-tabs__tab{
+        font-size: calrem(18px);
+        color: #141f3d;
+        border:0;
+        background-color: transparent;
+        font-family: 'Work Sans', sans-serif;
+        bottom:0;
+        &:focus{
+            outline:none;
+            box-shadow: 0 0 0 0;
+        }
+    }
+    .react-tabs__tab.react-tabs__tab--selected{
+        border:0;
+        background-color: transparent;
+        color: $my-green;
+        font-weight: 500;
+    }
+    .menuHeader{
+        @include mobile{
+            margin:0;
+        }  
+    }
+    .subcategory{
+        @include mobile{
+            margin:0;
+        }  
+    }
+}
